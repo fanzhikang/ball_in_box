@@ -8,4 +8,4 @@ def funcTarget(state):
     val=0
     for pt in state:
         val+=pt[2]**2
-    return pt
+    return val
