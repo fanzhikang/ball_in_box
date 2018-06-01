@@ -23,7 +23,7 @@ def validate(circles, blockers):
                 r = circle[2]
                 bx = block[0]
                 by = block[1]
-                if math.sqrt((x - bx)**2 + (y - by)**2) < r:
+                if (x - bx)**2 + (y - by)**2 < r**2:
                     return False
 
     # Is circle good for each other?
@@ -36,8 +36,8 @@ def validate(circles, blockers):
             y2 = circle2[1]
             r2 = circle2[2]
             if x1 != x2 and y1 != y2:
-                if math.sqrt((x1 - x2)**2 + (y1 - y2)**2) < (r1 + r2):
+                if (x1 - x2)**2 + (y1 - y2)**2 < (r1 + r2)**2:
                     return False
-
+    
     # all good
     return True

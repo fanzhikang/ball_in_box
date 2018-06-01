@@ -25,11 +25,10 @@ def sim_annealing(
     """
     if not funcValidate(initState) : raise Exception("Simulated annealing: initial state must be valid.")
     
-    st = initState
+    res = st = initState
     val = funcTarget(st)
     T = beginT
-    
-    while T >= endT :
+    while T > endT :
         cnt = 0
         
         nxt = funcTransfer(st, beginT, T, endT)
@@ -39,12 +38,14 @@ def sim_annealing(
         nxtval = funcTarget(nxt)
         
         if nxtval > val or random.random() < math.exp((nxtval - val) / T) :
+            if nxtval >= val :
+                res = nxt.copy()
             st = nxt
             val = nxtval
         
         T = T * stepRate
     
-    return st
+    return res
 
 
 ###############################################################################
