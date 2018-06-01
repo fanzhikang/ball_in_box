@@ -1,4 +1,4 @@
 User Story
 =========================
- As a mathematician, I want to find the maximum value of the sum of the area of a given number of circles in a square bounded by [-1,1]. Some tiny blocks are in the square at given position. The circles can¡¯t overlap with these blocks and each other. So that I can verify the accuracy of my calculations with the area result.
+ As a mathematician, I want to find the maximum value of the sum of the area of a given number of circles in a square bounded by [-1,1]. Some tiny blocks are in the square at given position. The circles can't overlap with these blocks and each other. So that I can verify the accuracy of my calculations with the area result.
 
