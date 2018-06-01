@@ -1,0 +1,15 @@
+User Story
+=========================
+ As a mathematician, I want to find the maximum value of the sum of the area of a given number of circles in a square bounded by [-1,1]. Some tiny blocks are in the square at given position. The circles can't overlap with these blocks and each other. So that I can verify the accuracy of my calculations with the area result.
+
+Break down user story:
+ 1.I want find a value of the sum of areas of some given circles, which can be set in a square bounded by [-1,1] with some tiny blocks in there.
+ 2.I want find the maximum of the value.
+ 3.I want find the maximum value with different blocks in there.
+
+Tasks:
+ 1.Set a square with different blocks, square bounded by [-1,1].User can define the position of the blocks.
+ 2.Let users set the number of balls.
+ 3.Use algorithm to calculate the position and the radius of these balls.
+ 4.Validate these balls.
+ 5.Calculate these balls' area sum.
